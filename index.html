@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css" />
-    <title>New Try</title>
+    <title>To-Do List</title>
 </head>
 <body>
     <main class="app">
@@ -16,12 +16,15 @@
             </h2>
         </section>
 
-        <!-- Create New To-Dos -->
+        <!-- CREATE NEW TODOS -->
         <section class="create-todo">
             <h3>CREATING THE LIST</h3>
             <form id="new-todo-form">
                 <h4>New Task:</h4>
-                <input type="text" name="content" id="content"/>
+                <input 
+                    type="text" 
+                    name="content" 
+                    id="content"/>
 
                 <h4>Category:</h4>
                 <div class="options">
@@ -30,16 +33,18 @@
                         <input 
                             type="radio" 
                             name="category" 
-                            id="category1" />
+                            id="category1" 
+                            value="business"/>
                         <span class="bubble business"></span>
-                        <div>Business</div>
+                        <div>Work</div>
                     </label>
 
                     <label>
                         <input 
                             type="radio" 
                             name="category" 
-                            id="category2" />
+                            id="category2" 
+                            value="personal"/>
                         <span class="bubble personal"></span>
                         <div>Personal</div>
                     </label>
@@ -51,6 +56,7 @@
             </form>
         </section>
 
+        <!-- THE TODO LIST -->
         <section class="todo-list">
             <h3>TO-DO LIST</h3>
             <div class="list" id="todo-list">
@@ -67,8 +73,8 @@
                     </div>
 
                     <div class="actions">
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
+                        <button class="Edit">Edit</button>
+                        <button class="Delete">Delete</button>
                     </div>
 
                 </div>
@@ -85,8 +91,8 @@
                     </div>
 
                     <div class="actions">
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
+                        <button class="Edit">Edit</button>
+                        <button class="Delete">Delete</button>
                     </div>
 
                 </div>  -->
@@ -100,3 +106,6 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
+<!-- Based on Tutorial: https://www.youtube.com/watch?v=6eFwtaZf6zc&list=WL&index=175&t=1875s -->
