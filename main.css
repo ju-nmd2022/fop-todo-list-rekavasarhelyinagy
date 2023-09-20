@@ -1,0 +1,22 @@
+*{
+    font-family: sans-serif;
+}
+
+.row {
+    display: flex;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+    position: relative;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+}
+
+
