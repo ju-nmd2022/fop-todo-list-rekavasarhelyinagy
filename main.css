@@ -1,42 +1,74 @@
-*{
+body{
     font-family: sans-serif;
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+    background-size: 450px;
 }
+
 
 .row {
     display: flex;
+    align-items: center;
+    position: relative;
+    left: 40px;
+    top:238px;
 }
 
 button {
     cursor: pointer;
+    border-radius: 40%;
+    background-color: rgb(222, 140, 40);
+    padding: 5px 10px 5px 10px;
+    margin-left: 8px;
+    height: 28px;
+    font-weight: bold;
+}
+
+button:hover {
+    transform: scale(1.02);
+    box-shadow: 5px 5px 5px rgba(138, 138, 138, 0.692);   
+}
+
+input {
+    width: 240px;
+    height: 31px;
+}
+
+ul {
+    position: relative;
+    top: 250px;
+    left: 60px;
 }
 
 ul li {
     list-style: none;
-    position: relative;
+    font-size: 20px;
+    margin-bottom: 35px;
 }
 
 ul li::before {
     content: '';
     position: absolute;
-    background-image: url(images/unchecked.png);
-    font: rgb(0, 128, 57);
+    /* background-image: url(images/unchecked.png); */
 }
 
 ul li.checked {
     text-decoration: line-through;
 }
 
-ul li.checked::before {
+/* ul li.checked::before {
     background-image: url(images/checked.png);
-    font: rgb(0, 255, 68);
-}
+} */
 
 ul li span{
-    position: absolute;
     font-size: 20px;
     border-radius: 50%;
+    margin-left: 10px;
+    padding: 4px 10px 4px 10px;
 }
 
 ul li span:hover {
-    background: #cccdce;
+    background-color: rgb(251, 213, 194);
 }
